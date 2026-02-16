@@ -1,0 +1,46 @@
+--- # Start of a YAML document, useful for configuration files
+
+# Employee record example
+name: Martin D'vloper # Key-value pair with a string value
+job: Developer
+skill: Elite # Strings generally do not require quotes
+employed: true # Boolean values can be 'true' or 'false'
+age: 30 # Integer value
+salary: 45000.50 # Floating point value
+# Comments are created using the hash symbol (#)
+
+# A list (sequence) of items
+foods:
+  - Apple
+  - Orange
+  - Strawberry
+  - Mango
+
+# A dictionary (mapping) with nested key-value pairs
+languages:
+  perl: Elite
+  python: Elite
+  pascal: Lame
+
+# A list of dictionaries (common in tools like Ansible or Kubernetes)
+projects:
+  - name: Project A
+    status: active
+    tasks:
+      - task1
+      - task2
+  - name: Project B
+    status: inactive
+
+# Multi-line string (literal block) - preserves newlines
+education: |
+  4 GCSEs
+  3 A-Levels
+  BSc in the Internet of Things
+
+# Folded multi-line string - folds newlines into spaces
+description: >
+  This is a long description that spans
+  multiple lines in the YAML file but will be
+  parsed as a single string.
+... # Optional end of the YAML document
